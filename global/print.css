@@ -1,0 +1,69 @@
+/* 
+Name: Fatemah Ali Alyami
+ID: 2006617
+Name: Renad Hassan Almadani
+ID: 2206593
+Section: CPCS 403
+Date: 2026-03-14
+*/
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .bookings-table-section,
+  .bookings-table-section * {
+    visibility: visible;
+  }
+
+  .bookings-table-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #ffffff;
+    padding: 0;
+    margin: 0;
+    box-shadow: none;
+    border: none;
+  }
+
+  .bookings-table-header .btn,
+  .table-action-btn,
+  .site-header,
+  .site-footer,
+  .bookings-hero,
+  .bookings-stats {
+    display: none !important;
+  }
+
+  .bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: auto;
+  }
+
+  .bookings-table th,
+  .bookings-table td {
+    border: 1px solid #000;
+    padding: 10px;
+    text-align: left;
+    color: #000;
+    background: #fff;
+  }
+
+  .bookings-table thead th {
+    background: #f2f2f2 !important;
+  }
+
+  .status-badge {
+    background: none !important;
+    color: #000 !important;
+    padding: 0 !important;
+    border-radius: 0 !important;
+  }
+
+  .bookings-table-header p {
+    display: none;
+  }
+}

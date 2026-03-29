@@ -1,0 +1,255 @@
+<!--
+Name: Fatemah Ali Alyami
+ID: 2006617
+Name: Renad Hassan Almadani
+ID: 2206593
+Section: CPCS 403
+Date: 2026-03-14
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCare | Appointments</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../global/main.css">
+  <link rel="stylesheet" href="../global/print.css" media="print">
+</head>
+<body>
+
+    <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo-area">
+        <h1 class="logo">MindCare</h1>
+        <p class="tagline">Professional Online Psychological Counseling & Session Booking</p>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+  <ul class="nav-list">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="services.html">Our Services</a></li>
+    
+    <li><a href="resources.html">Support Resources</a></li>
+    
+
+
+    <!-- Account Dropdown -->
+    <li class="account-dropdown">
+  <button class="account-btn" id="accountToggle" type="button">
+    My Account 
+  </button>
+
+  <ul class="dropdown-menu" id="accountMenu">
+    <li><a href="login.html">Login</a></li>
+    <li><a href="signup.html">Create Account</a></li>
+  </ul>
+</li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <!-- Hero Intro -->
+  <section class="page-hero">
+    <div class="container">
+  <div class="page-hero-box">
+    <h2>Appointments & Session Availability</h2>
+    <p>
+      Choose a session type to explore available doctors and appointment times,
+      then select a suitable slot to complete your booking request.
+    </p>
+  </div>
+</div>
+  </section>
+
+  <!-- Session Type Selector -->
+  <section class="selector-section">
+    <div class="container">
+      <div class="selector-card">
+        <div class="form-group">
+          <label for="sessionSelector">Choose Session Type</label>
+          <select id="sessionSelector">
+            <option value="">Select a session type</option>
+            <option value="family">Family Consultation</option>
+            <option value="individual">Individual Counseling</option>
+            <option value="anxiety">Anxiety Support</option>
+            <option value="stress">Stress Management</option>
+            <option value="student">Student Guidance</option>
+          </select>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dynamic Schedule Table -->
+  <section class="table-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Available Appointments</h2>
+        <p class="section-subtitle">
+          Click any available appointment slot to fill the booking form automatically.
+        </p>
+      </div>
+
+
+      <div class="table-wrapper">
+        <table class="schedule-table" id="appointmentsTable">
+          <thead>
+            <tr>
+              <th>Doctor</th>
+              <th>9:00 AM</th>
+              <th>10:00 AM</th>
+              <th>11:00 AM</th>
+              <th>12:00 PM</th>
+              <th>1:00 PM</th>
+              <th>2:00 PM</th>
+              <th>3:00 PM</th>
+              <th>4:00 PM</th>
+            </tr>
+          </thead>
+          <tbody id="appointmentsBody">
+            <tr>
+              <td colspan="9">Please select a session type to view available appointments.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Form -->
+  <section class="form-section appointments-form-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Book an Appointment</h2>
+        <p class="section-subtitle">
+          Complete the form below after selecting an available appointment slot.
+        </p>
+      </div>
+
+      <p id="selectedAppointmentMessage" class="selected-appointment-message">
+        No appointment selected yet.
+      </p>
+
+      <form class="booking-form" id="bookingForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input
+              type="text"
+              id="fullName"
+              name="fullName"
+              placeholder="Enter your full name"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+              required
+            >
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+966 5XXXXXXXX"
+              required
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="contactMethod">Preferred Contact Method</label>
+            <select id="contactMethod" name="contactMethod" required>
+              <option value="">Select one</option>
+              <option>Email</option>
+              <option>Phone Call</option>
+              <option>WhatsApp</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="sessionTypeForm">Session Type</label>
+            <input
+              type="text"
+              id="sessionTypeForm"
+              name="sessionType"
+              placeholder="Selected session type will appear here"
+              required
+              readonly
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="doctorName">Preferred Doctor</label>
+            <input
+              type="text"
+              id="doctorName"
+              name="doctorName"
+              placeholder="Doctor name will appear here"
+              required
+              readonly
+            >
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="appointmentTime">Preferred Time</label>
+            <input
+              type="text"
+              id="appointmentTime"
+              name="appointmentTime"
+              placeholder="Appointment time will appear here"
+              required
+              readonly
+            >
+          </div>
+
+          <div class="form-group">
+            <label for="notes">Additional Notes</label>
+            <input
+              type="text"
+              id="notes"
+              name="notes"
+              placeholder="Optional notes"
+            >
+          </div>
+        </div>
+
+        <p id="bookingSuccessMessage" class="success-message"></p>
+
+        <button type="submit" class="btn primary-btn">Submit Appointment Request</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 MindCare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

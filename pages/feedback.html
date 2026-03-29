@@ -1,0 +1,217 @@
+<!--
+Name: Fatemah Ali Alyami
+ID: 2006617
+Name: Renad Hassan Almadani
+ID: 2206593
+Section: CPCS 403
+Date: 2026-03-14
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCare | Contact & Feedback</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../global/main.css">
+  <link rel="stylesheet" href="../global/print.css" media="print">
+</head>
+<body>
+
+    <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo-area">
+        <h1 class="logo">MindCare</h1>
+        <p class="tagline">Professional Online Psychological Counseling & Session Booking</p>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+  <ul class="nav-list">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="services.html">Our Services</a></li>
+    
+    <li><a href="resources.html">Support Resources</a></li>
+    
+
+
+    <!-- Account Dropdown -->
+    <li class="account-dropdown">
+  <button class="account-btn" id="accountToggle" type="button">
+    My Account 
+  </button>
+
+  <ul class="dropdown-menu" id="accountMenu">
+    <li><a href="login.html">Login</a></li>
+    <li><a href="signup.html">Create Account</a></li>
+  </ul>
+</li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <!-- Intro Hero -->
+  <section class="page-hero">
+    <div class="container">
+  <div class="page-hero-box">
+    <h2>Contact & Feedback</h2>
+
+    <p>
+        Whether you would like to contact MindCare directly or share feedback
+        about your experience, this page is designed to make communication simple,
+        clear, and professional.
+    </p>
+
+    <h3 class="hero-subtitle">We’re Here to Help</h3>
+  </div>
+</div>
+  </section>
+
+  <!-- Contact Cards -->
+  <section class="contact-cards-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Get in Touch</h2>
+        <p class="section-subtitle">
+          Reach us through the following channels for inquiries, support, or general communication.
+        </p>
+      </div>
+
+      <div class="contact-cards-grid">
+        <div class="contact-card-modern">
+          <div class="contact-icon">✉</div>
+          <h3>Email</h3>
+          <p>support@mindcare.com</p>
+        </div>
+
+        <div class="contact-card-modern">
+          <div class="contact-icon">☎</div>
+          <h3>Phone</h3>
+          <p>+966 50 123 4567</p>
+        </div>
+
+        <div class="contact-card-modern">
+          <div class="contact-icon">📍</div>
+          <h3>Location</h3>
+          <p>Jeddah, Saudi Arabia</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Feedback Form Section -->
+  <section class="feedback-form-section">
+    <div class="container">
+      <div class="feedback-form-wrapper">
+        <div class="section-heading feedback-heading">
+          <h2>Send Us Your Feedback</h2>
+          <p class="section-subtitle">
+            Your opinion helps us improve our services and provide a better experience for every user.
+          </p>
+        </div>
+
+        <form class="feedback-form-modern" id="feedbackForm">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="feedbackName">Full Name</label>
+              <input
+                type="text"
+                id="feedbackName"
+                name="feedbackName"
+                placeholder="Enter your full name"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="feedbackEmail">Email Address</label>
+              <input
+                type="email"
+                id="feedbackEmail"
+                name="feedbackEmail"
+                placeholder="Enter your email"
+                required
+              >
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="feedbackPhone">Phone Number</label>
+              <input
+                type="tel"
+                id="feedbackPhone"
+                name="feedbackPhone"
+                placeholder="+966 5XXXXXXXX"
+                required
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="contactPreference">Preferred Contact Method</label>
+              <select id="contactPreference" name="contactPreference" required>
+                <option value="">Select one</option>
+                <option>Email</option>
+                <option>Phone Call</option>
+                <option>WhatsApp</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>How would you rate your experience?</label>
+            <div class="rating-options">
+              <label class="choice-pill"><input type="radio" name="rating" value="Excellent" required> Excellent</label>
+              <label class="choice-pill"><input type="radio" name="rating" value="Very Good"> Very Good</label>
+              <label class="choice-pill"><input type="radio" name="rating" value="Good"> Good</label>
+              <label class="choice-pill"><input type="radio" name="rating" value="Fair"> Fair</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Which services are you interested in?</label>
+            <div class="interest-options">
+              <label class="choice-pill"><input type="checkbox" name="services" value="Individual Counseling"> Individual Counseling</label>
+              <label class="choice-pill"><input type="checkbox" name="services" value="Family Consultation"> Family Consultation</label>
+              <label class="choice-pill"><input type="checkbox" name="services" value="Anxiety Support"> Anxiety Support</label>
+              <label class="choice-pill"><input type="checkbox" name="services" value="Stress Management"> Stress Management</label>
+              <label class="choice-pill"><input type="checkbox" name="services" value="Student Guidance"> Student Guidance</label>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="feedbackMessage">Additional Comments</label>
+            <textarea
+              id="feedbackMessage"
+              name="feedbackMessage"
+              rows="6"
+              placeholder="Write your feedback here..."
+              required
+            ></textarea>
+          </div>
+
+          <p id="feedbackSuccessMessage" class="success-message"></p>
+
+          <button type="submit" class="btn primary-btn">Submit Feedback</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 MindCare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>

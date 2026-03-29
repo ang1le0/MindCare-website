@@ -1,0 +1,130 @@
+<!--
+Name: Fatemah Ali Alyami
+ID: 2006617
+Name: Renad Hassan Almadani
+ID: 2206593
+Section: CPCS 403
+Date: 2026-03-14
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindCare | Our Services</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="../global/main.css">
+  <link rel="stylesheet" href="../global/print.css" media="print">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="site-header">
+    <div class="container">
+      <div class="logo-area">
+        <h1 class="logo">MindCare</h1>
+        <p class="tagline">Professional Online Psychological Counseling & Session Booking</p>
+      </div>
+
+      <!-- Navigation Menu -->
+      <nav class="navbar">
+  <ul class="nav-list">
+    <li><a href="../index.html">Home</a></li>
+    <li><a href="services.html">Our Services</a></li>
+    
+    <li><a href="resources.html">Support Resources</a></li>
+    
+
+    <!-- Account Dropdown -->
+    <li class="account-dropdown">
+  <button class="account-btn" id="accountToggle" type="button">
+    My Account 
+  </button>
+
+  <ul class="dropdown-menu" id="accountMenu">
+    <li><a href="login.html">Login</a></li>
+    <li><a href="signup.html">Create Account</a></li>
+  </ul>
+</li>
+  </ul>
+</nav>
+    </div>
+  </header>
+
+  <!-- Login Section -->
+  <main class="auth-page">
+    <section class="auth-wrapper container">
+      <div class="auth-card">
+        <div class="auth-left">
+          <span class="auth-badge">Secure Access</span>
+          <h2>Welcome Back</h2>
+          <p>
+            Log in to manage your appointments, communicate with support,
+            and access your MindCare account securely.
+          </p>
+
+          <ul class="auth-features">
+            <li>View your booked sessions</li>
+            <li>Access appointment details quickly</li>
+            <li>Stay connected with support services</li>
+          </ul>
+        </div>
+
+        <div class="auth-right">
+          <h3>Login to Your Account</h3>
+
+          <form id="loginForm" class="auth-form">
+            <div class="form-group">
+              <label for="loginEmail">Email Address</label>
+              <input
+                type="email"
+                id="loginEmail"
+                name="loginEmail"
+                placeholder="Enter your email"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="loginPassword">Password</label>
+              <input
+                type="password"
+                id="loginPassword"
+                name="loginPassword"
+                placeholder="Enter your password"
+                required
+              />
+            </div>
+
+            
+
+            <button type="submit" class="btn primary-btn auth-submit-btn">
+              Login
+            </button>
+
+            <p class="auth-message" id="loginMessage"></p>
+
+            <p class="auth-switch">
+              Don’t have an account?
+              <a href="signup.html">Create Account</a>
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+    <!-- Footer Section -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 MindCare. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../scripts/main.js"></script>
+</body>
+</html>
